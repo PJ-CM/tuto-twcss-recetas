@@ -2,3 +2,5 @@
 /___docs
 /.vscode
 /node_modules
+
+tailwind-full-default.config.js

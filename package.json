@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "tailwindcss build src/css/estilos.css -o public/css/estilos.css"
+    "build:css": "postcss src/css/estilos.css -o public/css/estilos.css",
+    "watch": "onchange \"src/css/*.css\" \"./*.js\" -- npm run build:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "onchange": "^7.0.2",
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.0.0",
     "tailwindcss": "^1.8.10"
   }
 }
