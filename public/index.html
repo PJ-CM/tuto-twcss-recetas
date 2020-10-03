@@ -13,12 +13,19 @@
     <div class="grid md:grid-cols-3">
         <div class="md:col-span-1 md:flex md:justify-end">
             <nav class="text-right">
-                <div>
+                <div class="flex items-center justify-between">
                     <h1 class="p-4 font-bold uppercase border-b border-gray-100">
                         <a href="/" class="hover:text-gray-800">Comida Zacktagnan</a>
                     </h1>
+                    <div class="px-4 cursor-pointer md:hidden" id="hamburguesa">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </div>
                 </div>
-                <ul class="mt-6 text-sm">
+                <ul class="hidden mt-6 text-sm md:block" id="menu">
                     <li class="py-1 font-bold text-gray-900">
                         <a href="#" class="flex justify-end gap-2 px-4 border-r-4 border-primary">
                             <span>Inicio</span>
@@ -135,6 +142,7 @@
         </main>
     </div>
 
+    <script src="js/index.js"></script>
 </body>
 
 </html>

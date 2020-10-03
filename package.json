@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss src/css/estilos.css -o public/css/estilos.css",
-    "watch": "onchange \"src/css/*.css\" \"./*.js\" -- npm run build:css"
+    "watch": "onchange \"src/css/*.css\" \"./*.js\" \"public/js/*.js\" -- npm run build:css"
   },
   "keywords": [],
   "author": "",
